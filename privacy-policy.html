@@ -413,12 +413,6 @@
                     </svg>
                     Calendar Data
                 </a>
-                <a href="#google" class="nav-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                    </svg>
-                    Google Sign-In
-                </a>
                 <a href="#tracking" class="nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
@@ -461,7 +455,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        Updated March 2026
+                        Updated April 2026
                     </span>
                     <span class="badge accent">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -475,7 +469,7 @@
             <div class="content">
                 <section id="collection">
                     <h2>What VoxPlan Collects</h2>
-                    <p>VoxPlan collects only the minimum data needed to function. When you use voice event creation, audio is recorded locally on your device and sent securely for transcription and event parsing. If you connect calendars, VoxPlan reads and writes calendar data only to display and create events you request.</p>
+                    <p>VoxPlan collects only the minimum data needed to function. When you use voice event creation, audio is recorded locally on your device and sent securely for transcription and event parsing. Audio and transcripts are not stored after processing. VoxPlan reads and writes calendar data on your device only to display and create events you request.</p>
                 </section>
 
                 <section id="voice">
@@ -485,12 +479,7 @@
 
                 <section id="calendar">
                     <h2>Calendar Data</h2>
-                    <p>VoxPlan can access your iOS calendar through <span class="highlight">EventKit</span> and your Google Calendar if you choose to sign in. This access is used only to display calendars and create, edit, or delete events on your behalf. Calendar data is not sold, shared for advertising, or used for tracking.</p>
-                </section>
-
-                <section id="google">
-                    <h2>Google Calendar Sign-In</h2>
-                    <p>If you choose to connect Google Calendar, authentication is handled by Google. VoxPlan receives only the access needed to read and write your calendar data. Google's own privacy policy applies to that sign-in flow.</p>
+                    <p>VoxPlan can access your iOS calendar through <span class="highlight">EventKit</span>. This access is used only to display calendars and create, edit, or delete events on your behalf. Calendar data stays on your device and is not sent to VoxPlan servers. It is not sold, shared for advertising, or used for tracking.</p>
                 </section>
 
                 <section id="tracking">
@@ -505,7 +494,7 @@
 
                 <section id="services">
                     <h2>Third-Party Services</h2>
-                    <p>VoxPlan uses secure external services only where necessary to provide features you request, such as voice transcription and optional Google Calendar integration. Those providers process data only as needed to complete the requested action.</p>
+                    <p>VoxPlan uses a secure external service for voice transcription. Audio is sent to a Cloudflare Worker endpoint, processed, and immediately discarded. No audio or transcript is retained after the response is returned.</p>
                 </section>
 
                 <section id="children">
